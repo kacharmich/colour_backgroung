@@ -1,49 +1,6 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Мой сайт</title>
-    <style>
-        body {
-            background-color: #fff;
-            color: #333;
-        }
-
-        button {
-            background-color: #fff;
-            color: #333;
-            border: 1px solid #333;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-
-            button.active {
-                border: 1px solid #fff;
-            }
-    </style>
+   Привет! Тут вы можете сменить цвет сайта. Просто нажмите кнопку ниже
+    <script src="popup.js"></script>
 </head>
-<body>
-    <h1>Мой сайт</h1>
-    <p>Привет, мир!</p>
-    <div>
-        <button class="color-btn" data-color="#fff">Белый</button>
-        <button class="color-btn" data-color="#333">Черный</button>
-        <button class="color-btn" data-color="#f00">Красный</button>
-        <button class="color-btn" data-color="#0f0">Зеленый</button>
-        <button class="color-btn" data-color="#00f">Синий</button>
-    </div>
-    <script>
-const buttons = document.querySelectorAll('.color-btn');
-
-buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                buttons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                document.body.style.backgroundColor = button.dataset.color;
-            });
-});
-    </script>
-</body>
 </html>
