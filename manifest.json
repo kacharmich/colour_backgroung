@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Смена цвета сайта",
+  "version": "1.0",
+  "description": "Нажмите кнопку для смены цвета сайта на кремовый",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
